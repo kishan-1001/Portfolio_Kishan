@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 cursor-none;
+  }
+
+  a,
+  button {
+    @apply cursor-pointer;
+  }
+
+  img {
+    @apply cursor-auto;
+  }
+}
+
+/* Scroll Reveal Animation - Fade Up Effect */
+.reveal-text {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal-text.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered delays for sequential appearance */
+.delay-100 {
+  transition-delay: 0.1s;
+}
+
+.delay-200 {
+  transition-delay: 0.2s;
+}
+
+.delay-300 {
+  transition-delay: 0.3s;
+}
+
+.delay-400 {
+  transition-delay: 0.4s;
+}
+
+.delay-500 {
+  transition-delay: 0.5s;
+}
+
+.delay-600 {
+  transition-delay: 0.6s;
+}
+
+.delay-700 {
+  transition-delay: 0.7s;
+}
+
+.delay-800 {
+  transition-delay: 0.8s;
+}
