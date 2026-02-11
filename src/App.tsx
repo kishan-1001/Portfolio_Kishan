@@ -8,11 +8,13 @@ import Stats from './components/Stats';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import CustomCursor from './components/CustomCursor';
+import SocialSidebar from './components/SocialSidebar';
 
 function App() {
   return (
     <div className="relative w-full h-full min-h-screen bg-gray-50 text-gray-900 font-sans antialiased">
       <CustomCursor />
+      <SocialSidebar />
       <Navbar />
       <Hero />
       <About />
