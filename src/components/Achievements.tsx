@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect } from 'react';
-import { Award, ExternalLink, Download, Trophy, X, GraduationCap, Star } from 'lucide-react';
+import { useState } from 'react';
+import { Award, ExternalLink, Download, Trophy, X, GraduationCap } from 'lucide-react';
 
 const achievements = [
     {
