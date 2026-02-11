@@ -14,6 +14,39 @@ const projects = [
         image: "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&q=80&w=2000"
     },
     {
+        title: "WhatsApp Chat Analyzer",
+        subtitle: "Data Visualization & Analytics Tool",
+        description: "An intelligent analytics tool that transforms WhatsApp chat exports into insightful visualizations, revealing conversation patterns, activity trends, and engagement metrics.",
+        tags: ["Python", "Streamlit", "Pandas", "Matplotlib", "Data Analysis", "NLP"],
+        links: {
+            github: "https://github.com/kishan-1001/WhatsApp-Chat-Analyzer",
+            live: "#"
+        },
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000"
+    },
+    {
+        title: "Toycathon 2025",
+        subtitle: "Interactive Educational Game",
+        description: "A creative game developed for Toycathon 2025, focusing on Indian culture and mythology. Features engaging gameplay mechanics designed to educate and entertain.",
+        tags: ["Game Development", "Unity", "C#", "UI/UX", "Educational Tech"],
+        links: {
+            github: "https://github.com/kishan-1001/toycathon_2025",
+            live: "#"
+        },
+        image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=2000"
+    },
+    {
+        title: "A-Z Character Recognition",
+        subtitle: "Deep Learning Model",
+        description: "A robust handwritten character recognition system using Convolutional Neural Networks to accurately identify A-Z characters with high precision and real-time inference.",
+        tags: ["Python", "TensorFlow", "Keras", "CNN", "Computer Vision", "Machine Learning"],
+        links: {
+            github: "https://github.com/kishan-1001/A-Z-Handwritten-Character-Recognition-Model",
+            live: "#"
+        },
+        image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=2000"
+    },
+    {
         title: "Pineapple Memories",
         subtitle: "Digital Memory Gallery",
         description: "A secure and elegant space to preserve, organize, and share your most cherished memories with intuitive gallery features and seamless user experience.",
