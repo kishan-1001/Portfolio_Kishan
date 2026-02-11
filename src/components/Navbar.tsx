@@ -94,8 +94,8 @@ const Navbar = () => {
             </div>
 
             {/* Navigation Links */}
-            <nav className="hidden md:flex items-center space-x-1">
-                {/* space-x-1 because each link has its own large hit area (w-24) */}
+            <nav className="hidden md:flex items-center gap-8">
+                {/* space-x-1 removed, using gap-8 for equal spacing */}
                 {navItems.map((item) => (
                     <NavLink key={item.label} href={item.href} isScrolled={isScrolled}>
                         {item.label}
