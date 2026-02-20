@@ -148,6 +148,7 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => (
 const Projects = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isAnimating, setIsAnimating] = useState(false);
+    const touchStartRef = { current: null as number | null };
 
     const nextProject = () => {
         if (isAnimating) return;
@@ -165,6 +166,19 @@ const Projects = () => {
             setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
             setIsAnimating(false);
         }, 300); // Wait for exit animation
+    };
+
+    const handleTouchStart = (e: React.TouchEvent) => {
+        touchStartRef.current = e.changedTouches[0].clientX;
+    };
+
+    const handleTouchEnd = (e: React.TouchEvent) => {
+        if (touchStartRef.current === null) return;
+        const deltaX = e.changedTouches[0].clientX - touchStartRef.current;
+        touchStartRef.current = null;
+        if (Math.abs(deltaX) < 50) return; // too small, ignore
+        if (deltaX < 0) nextProject(); // swipe left → next
+        else prevProject();            // swipe right → prev
     };
 
     return (
@@ -202,7 +216,11 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="relative">
+                <div
+                    className="relative"
+                    onTouchStart={handleTouchStart}
+                    onTouchEnd={handleTouchEnd}
+                >
                     <div
                         className={`transition-all duration-500 ease-in-out transform ${isAnimating ? 'opacity-0 translate-y-4 scale-95' : 'opacity-100 translate-y-0 scale-100'
                             }`}
