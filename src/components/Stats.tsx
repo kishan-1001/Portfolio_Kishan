@@ -36,9 +36,9 @@ const Stats = () => {
     useEffect(() => {
         const fetchLeetCodeStats = async () => {
             try {
-                const response = await fetch(`https://leetcode-stats-api.herokuapp.com/${username}`);
+                const response = await fetch(`https://leetcode-api-faisalshohag.vercel.app/${username}`);
                 const data = await response.json();
-                if (data.status === "success") {
+                if (data && data.totalSolved !== undefined) {
                     setLeetCodeData({
                         totalSolved: data.totalSolved,
                         easySolved: data.easySolved,
