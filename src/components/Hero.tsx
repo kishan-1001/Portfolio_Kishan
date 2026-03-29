@@ -14,14 +14,14 @@ const Hero = () => {
             <div className="lg:hidden relative z-10 container mx-auto px-6 h-full flex flex-col items-center justify-start pt-20 pb-12">
                 {/* Text Content */}
                 <div className="text-center relative z-20 mb-6">
-                    <h1 className="text-[4rem] sm:text-[5rem] leading-none font-bold text-gray-900 tracking-tighter">
+                    <h1 className="flex justify-center text-[4rem] sm:text-[5rem] leading-none font-bold text-gray-900 tracking-tighter">
                         {firstName.map((char, index) => (
                             <span key={index} className={letterClass}>
                                 {char}
                             </span>
                         ))}
                     </h1>
-                    <h1 className="text-[4rem] sm:text-[5rem] leading-none font-light text-gray-900 tracking-tighter ml-6 sm:ml-10 -mt-2 sm:-mt-4">
+                    <h1 className="flex justify-center text-[4rem] sm:text-[5rem] leading-none font-light text-gray-900 tracking-tighter ml-6 sm:ml-10 -mt-2 sm:-mt-4">
                         {lastName.map((char, index) => (
                             <span key={index} className={letterClass}>
                                 {char}
@@ -52,14 +52,14 @@ const Hero = () => {
             <div className="hidden lg:flex relative z-10 container mx-auto px-6 h-full flex-col lg:flex-row items-center justify-between pt-24">
                 {/* Text Content */}
                 <div className="text-left relative z-20">
-                    <h1 className="text-[12rem] leading-none font-bold text-gray-900 tracking-tighter">
+                    <h1 className="flex text-[12rem] leading-none font-bold text-gray-900 tracking-tighter">
                         {firstName.map((char, index) => (
                             <span key={index} className={letterClass}>
                                 {char}
                             </span>
                         ))}
                     </h1>
-                    <h1 className="text-[12rem] leading-none font-light text-gray-900 tracking-tighter ml-20 -mt-10">
+                    <h1 className="flex text-[12rem] leading-none font-light text-gray-900 tracking-tighter ml-20 -mt-10">
                         {lastName.map((char, index) => (
                             <span key={index} className={letterClass}>
                                 {char}
