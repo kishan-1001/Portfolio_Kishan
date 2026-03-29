@@ -52,14 +52,14 @@ const Hero = () => {
             <div className="hidden lg:flex relative z-10 container mx-auto px-6 h-full flex-col lg:flex-row items-center justify-between pt-24">
                 {/* Text Content */}
                 <div className="text-left relative z-20">
-                    <h1 className="flex text-[12rem] leading-none font-bold text-gray-900 tracking-tighter">
+                    <h1 className="flex text-[7rem] lg:text-[9rem] xl:text-[11rem] 2xl:text-[12rem] leading-none font-bold text-gray-900 tracking-tighter">
                         {firstName.map((char, index) => (
                             <span key={index} className={letterClass}>
                                 {char}
                             </span>
                         ))}
                     </h1>
-                    <h1 className="flex text-[12rem] leading-none font-light text-gray-900 tracking-tighter ml-20 -mt-10">
+                    <h1 className="flex text-[7rem] lg:text-[9rem] xl:text-[11rem] 2xl:text-[12rem] leading-none font-light text-gray-900 tracking-tighter ml-10 lg:ml-16 xl:ml-20 -mt-4 lg:-mt-8 xl:-mt-10">
                         {lastName.map((char, index) => (
                             <span key={index} className={letterClass}>
                                 {char}
@@ -69,7 +69,7 @@ const Hero = () => {
                 </div>
 
                 {/* Introductory Text - Positioned over image */}
-                <div className="absolute top-[30%] right-[20%] max-w-sm text-left z-30 flex flex-col items-start">
+                <div className="absolute top-[30%] right-[2%] lg:right-[10%] xl:right-[15%] 2xl:right-[20%] max-w-sm text-left z-30 flex flex-col items-start px-4">
                     <div className="w-12 h-[2px] bg-black mb-4"></div>
                     <p className="text-xl text-gray-800 font-medium tracking-wide leading-relaxed">
                         I build <span className="text-black font-bold">software</span> today while experimenting with how <span className="text-black font-bold">machines learn</span> for tomorrow.
