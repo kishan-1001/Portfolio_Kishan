@@ -9,20 +9,22 @@ const projects = [
         tags: ["React", "Node.js", "Express", "MongoDB", "AI Integration", "Socket.io"],
         links: {
             github: "https://github.com/kishan-1001/CodeHive",
-            live: "https://mycodehive.in"
+            live: "https://mycodehive.in",
+            casestudy: "https://researchpaper-three.vercel.app/"
         },
         image: "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&q=80&w=2000"
     },
     {
-        title: "WhatsApp Chat Analyzer",
-        subtitle: "Data Visualization & Analytics Tool",
-        description: "An intelligent analytics tool that transforms WhatsApp chat exports into insightful visualizations, revealing conversation patterns, activity trends, and engagement metrics.",
-        tags: ["Python", "Streamlit", "Pandas", "Matplotlib", "Data Analysis", "NLP"],
+        title: "KavachPay",
+        subtitle: "Zero-Trust Income Protection Platform",
+        description: "A zero-trust income protection platform for gig workers providing real-time verification and automated risk scoring for sudden earning disruptions. Features a 'Work-Proof Protocol' with cryptographic hash chains, multi-pillar ML fraud detection, and production-ready treasury management.",
+        tags: ["TypeScript", "Node.js", "Python", "FastAPI", "ML", "PostgreSQL", "Razorpay", "HMAC-SHA256"],
         links: {
-            github: "https://github.com/kishan-1001/WhatsApp-Chat-Analyzer",
-            live: "#"
+            github: "https://github.com/kishan-1001/KavachPay",
+            live: "https://kavachpay-seven.vercel.app/",
+            casestudy: "#"
         },
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000"
+        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=2000"
     },
     {
         title: "Toycathon 2025",
@@ -31,9 +33,22 @@ const projects = [
         tags: ["Game Development", "Unity", "C#", "UI/UX", "Educational Tech"],
         links: {
             github: "https://github.com/kishan-1001/toycathon_2025",
-            live: "#"
+            live: "#",
+            casestudy: "#"
         },
         image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=2000"
+    },
+    {
+        title: "WhatsApp Chat Analyzer",
+        subtitle: "Data Visualization & Analytics Tool",
+        description: "An intelligent analytics tool that transforms WhatsApp chat exports into insightful visualizations, revealing conversation patterns, activity trends, and engagement metrics.",
+        tags: ["Python", "Streamlit", "Pandas", "Matplotlib", "Data Analysis", "NLP"],
+        links: {
+            github: "https://github.com/kishan-1001/WhatsApp-Chat-Analyzer",
+            live: "#",
+            casestudy: "#"
+        },
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000"
     },
     {
         title: "A-Z Character Recognition",
@@ -42,7 +57,8 @@ const projects = [
         tags: ["Python", "TensorFlow", "Keras", "CNN", "Computer Vision", "Machine Learning"],
         links: {
             github: "https://github.com/kishan-1001/A-Z-Handwritten-Character-Recognition-Model",
-            live: "#"
+            live: "#",
+            casestudy: "#"
         },
         image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=2000"
     },
@@ -53,7 +69,8 @@ const projects = [
         tags: ["React", "Firebase", "Tailwind CSS", "Framer Motion", "Cloudinary"],
         links: {
             github: "https://github.com/kishan-1001/Pineapple-Memories",
-            live: "#" // Placeholder as requested
+            live: "#",
+            casestudy: "#" 
         },
         image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=2000"
     }
@@ -113,7 +130,9 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => (
 
                 <div className="flex gap-4 mt-auto">
                     <a
-                        href="#"
+                        href={project.links.casestudy}
+                        target={project.links.casestudy !== '#' ? "_blank" : undefined}
+                        rel={project.links.casestudy !== '#' ? "noopener noreferrer" : undefined}
                         className="flex items-center gap-2 text-white font-medium hover:text-blue-400 transition-colors group text-sm"
                     >
                         <BookOpen size={18} />
