@@ -3,6 +3,20 @@ import { Award, ExternalLink, Download, Trophy, X, GraduationCap } from 'lucide-
 
 const achievements = [
     {
+        id: 4,
+        title: "Guidewire DEVTrails University Hackathon 2026",
+        organization: "Guidewire Software",
+        date: "2026",
+        description: "A 45-day industry-level national hackathon organized by Guidewire Software simulating real-world software engineering and industry problem solving. Built a real product focusing on AI, InsurTech, scalable backend systems, and clean architecture, guided by professionals, competing with top students across India.",
+        category: "Hackathon",
+        icon: Trophy,
+        image: null,
+        links: {
+            view: "https://drive.google.com/file/d/1hxMHPx1nG_ROFMGlMVDMuvMaQBr0Tg3m/preview",
+            download: "https://drive.google.com/uc?export=download&id=1hxMHPx1nG_ROFMGlMVDMuvMaQBr0Tg3m"
+        }
+    },
+    {
         id: 1,
         title: "Toycathon 2025",
         organization: "Government of India",
